@@ -73,7 +73,11 @@ public class User {
     }
 
 
+    public Set<Roles> getRoles() {
+        return roles;
+    }
 
-
-
+    public void setRoles(Set<Roles> roles) {
+        this.roles = roles;
+    }
 }
