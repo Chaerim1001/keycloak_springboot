@@ -25,4 +25,10 @@ public class StudentController {
         ModelAndView modelAndView = new ModelAndView("manage-students");
         return modelAndView;
     }
+
+    @GetMapping("/access-denied")
+    public ModelAndView accessDenied(){
+        ModelAndView modelAndView = new ModelAndView("access-denied");
+        return modelAndView;
+    }
 }

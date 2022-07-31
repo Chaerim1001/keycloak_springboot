@@ -26,7 +26,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
              .and().csrf().disable()
                 .formLogin().loginPage("/login")
                     .defaultSuccessUrl("/home")
-                        .usernameParameter("username").passwordParameter("password");
+                        .usernameParameter("username").passwordParameter("password")
+                            .and().exceptionHandling().accessDeniedPage("/access-denied");
     }
 
     @Bean
